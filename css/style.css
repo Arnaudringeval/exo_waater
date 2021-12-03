@@ -237,4 +237,16 @@ padding: 0 10px;
     .pic, .desc{
         width: 100%;
     }
+
+    .form{
+        flex-wrap: wrap;
+    }
+
+    .book{
+        flex-wrap: wrap;
+    }
+
+    .services{
+        flex-wrap: wrap;
+    }
 }
