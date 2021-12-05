@@ -74,6 +74,14 @@ header{
     font-weight: 900;
     display: inline-block;
     color: white;
+    border-bottom: 3px solid #ffc40000;
+    transition: border-bottom 0.3s ease-in-out;
+}
+/*, padding-bottom 300ms ease-in-out*/
+.menu li a:hover{
+    
+    /*padding-bottom: 3px;*/
+    border-bottom: 3px solid #ffc400;
 }
 
 /* Style banner*/
@@ -108,8 +116,15 @@ header{
     width: fit-content;
     padding: 15px 20px;
     margin: 20px auto;
-    border-radius: 40px;    
+    border-radius: 40px;
+    transition: all 0.3s;
 }
+
+.arrow:hover{
+    border: #ffc400 5px solid;
+    color: white;
+}
+
 /* font-family: 'Berkshire Swash', cursive; */
 
 /* style about us*/
@@ -239,7 +254,8 @@ padding: 0 10px;
     }
 
     .form{
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
 
     .book{
@@ -248,5 +264,18 @@ padding: 0 10px;
 
     .services{
         flex-wrap: wrap;
+    }
+    .form input, .form button{
+        width: 80%;
+        margin: 5px;
+    }
+
+    .form button{
+        width: 40%;
+        margin: 5px;
+    }
+
+    img{
+        max-width: 90%;
     }
 }
